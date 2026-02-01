@@ -16,7 +16,6 @@ export default [
     },
   },
 
-  // QUAN TRỌNG: bỏ qua thư viện để tránh spam lỗi
   {
     ignores: ["node_modules/**", "build/**"],
   },

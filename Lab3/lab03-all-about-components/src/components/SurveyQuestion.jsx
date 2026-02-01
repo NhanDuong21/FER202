@@ -24,10 +24,8 @@ export default function SurveyQuestion({
       <div className="card-body px-4 py-4">
         <h4 className="text-center fw-bold mb-4">{questionText}</h4>
 
-        {/* Options area */}
         <div className="border rounded p-3 mb-3">
           <div className="row">
-            {/* Left radios */}
             <div className="col-2 d-flex flex-column align-items-start gap-2">
               {options.map((opt) => (
                 <input
@@ -45,7 +43,6 @@ export default function SurveyQuestion({
               ))}
             </div>
 
-            {/* Center labels */}
             <div className="col-10 d-flex flex-column align-items-center gap-2">
               {options.map((opt) => (
                 <div key={opt} className="text-center">
@@ -56,7 +53,6 @@ export default function SurveyQuestion({
           </div>
         </div>
 
-        {/* Error message */}
         {error && (
           <div className="alert alert-danger text-center mb-3" role="alert">
             <span className="me-2">⚠️</span>
@@ -64,7 +60,6 @@ export default function SurveyQuestion({
           </div>
         )}
 
-        {/* Next button */}
         <div className="d-grid">
           <button className="btn btn-primary btn-lg" onClick={handleNextClick}>
             Next
